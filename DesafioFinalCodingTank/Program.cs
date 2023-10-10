@@ -39,6 +39,9 @@ public class DesafioFinalCodingTank
             case 4:
                 Question4();
                 break;
+            case 5:
+                Question5();
+                break;
             default:
                 break;
         }
@@ -164,14 +167,24 @@ public class DesafioFinalCodingTank
 
     static void Question4()
     {
-        Console.WriteLine("Alternativa C)1\n" +
-                          "Durante a conversão de um numero inteiro de 32 bits para um inteiro " +
+        Console.WriteLine("Alternativa C)1");
+        Console.WriteLine("Durante a conversão de um numero inteiro de 32 bits para um inteiro " +
                           "de 16 bits foi passada para a função Convert.ToInt16() uma condicional" +
                           "falsa que foi invertida para positivo pelo operador lógico !.\n" +
                           "Quando um valor booleano precisa ser representando em valores " +
                           "inteiros, o numero escolhido para valores positivos é o 1");
        
     }
-    static void Question5(){}
+
+    static void Question5()
+    {
+        Console.WriteLine("Alternativa E) –5, –2, 1, 4, 7");
+        Console.WriteLine("O programa é um for loop cuja variavel inicial i é igual a -5." +
+                          " A condição para que o loop continue é de que o valor de i permaneça" +
+                          " menor ou igual a 7, e após cada repetição o valor de i incrementará em 3." +
+                          " O resultado do programa apresenta os valores de i durante o loop no" +
+                          " terminal, com cada valor sendo escrito em linhas diferentes");
+        
+    }
     
 }
