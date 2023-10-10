@@ -1,0 +1,14 @@
+C:\Users\extre\OneDrive\Documentos\coding\DesafioFinalCodingTank\DesafioFinalCodingTank\bin\Debug\net7.0\DesafioFinalCodingTank.exe
+C:\Users\extre\OneDrive\Documentos\coding\DesafioFinalCodingTank\DesafioFinalCodingTank\bin\Debug\net7.0\DesafioFinalCodingTank.deps.json
+C:\Users\extre\OneDrive\Documentos\coding\DesafioFinalCodingTank\DesafioFinalCodingTank\bin\Debug\net7.0\DesafioFinalCodingTank.runtimeconfig.json
+C:\Users\extre\OneDrive\Documentos\coding\DesafioFinalCodingTank\DesafioFinalCodingTank\bin\Debug\net7.0\DesafioFinalCodingTank.dll
+C:\Users\extre\OneDrive\Documentos\coding\DesafioFinalCodingTank\DesafioFinalCodingTank\bin\Debug\net7.0\DesafioFinalCodingTank.pdb
+C:\Users\extre\OneDrive\Documentos\coding\DesafioFinalCodingTank\DesafioFinalCodingTank\obj\Debug\net7.0\DesafioFinalCodingTank.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\extre\OneDrive\Documentos\coding\DesafioFinalCodingTank\DesafioFinalCodingTank\obj\Debug\net7.0\DesafioFinalCodingTank.AssemblyInfoInputs.cache
+C:\Users\extre\OneDrive\Documentos\coding\DesafioFinalCodingTank\DesafioFinalCodingTank\obj\Debug\net7.0\DesafioFinalCodingTank.AssemblyInfo.cs
+C:\Users\extre\OneDrive\Documentos\coding\DesafioFinalCodingTank\DesafioFinalCodingTank\obj\Debug\net7.0\DesafioFinalCodingTank.csproj.CoreCompileInputs.cache
+C:\Users\extre\OneDrive\Documentos\coding\DesafioFinalCodingTank\DesafioFinalCodingTank\obj\Debug\net7.0\DesafioFinalCodingTank.dll
+C:\Users\extre\OneDrive\Documentos\coding\DesafioFinalCodingTank\DesafioFinalCodingTank\obj\Debug\net7.0\refint\DesafioFinalCodingTank.dll
+C:\Users\extre\OneDrive\Documentos\coding\DesafioFinalCodingTank\DesafioFinalCodingTank\obj\Debug\net7.0\DesafioFinalCodingTank.pdb
+C:\Users\extre\OneDrive\Documentos\coding\DesafioFinalCodingTank\DesafioFinalCodingTank\obj\Debug\net7.0\DesafioFinalCodingTank.genruntimeconfig.cache
+C:\Users\extre\OneDrive\Documentos\coding\DesafioFinalCodingTank\DesafioFinalCodingTank\obj\Debug\net7.0\ref\DesafioFinalCodingTank.dll
