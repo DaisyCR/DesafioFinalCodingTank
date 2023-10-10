@@ -54,10 +54,11 @@ public class DesafioFinalCodingTank
         int positiveTotal = 0;
         int negativeTotal = 0;
         
-        for (int i = 0; i < 5; i++)
+        for (int i = 1; i <= 5; i++)
         {
-            Console.Write("Insira um valor: ");
-            if(int.TryParse(Console.ReadLine(), out int input)){
+            Console.Write($"Insira o {i}° valor: ");
+            if(int.TryParse(Console.ReadLine(), out int input))
+            {
                 if (input % 2 == 0)
                 {
                     evenTotal++;
@@ -67,7 +68,7 @@ public class DesafioFinalCodingTank
                 {
                     oddTotal++;
                 }
-
+                
                 if (input < 0)
                 {
                     negativeTotal++;
@@ -82,9 +83,8 @@ public class DesafioFinalCodingTank
                 Console.WriteLine("\nERROR: Insira um número válido!");
                 i--;
             }
-            
-           
         }
+        
         Console.WriteLine($"Número de valores pares: {evenTotal}\n" +
                           $"Número de valores ímpares: {oddTotal}\n" +
                           $"Número de valores negativos: {negativeTotal}\n" +
