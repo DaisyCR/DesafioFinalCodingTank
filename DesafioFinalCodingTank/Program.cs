@@ -30,6 +30,9 @@ public class DesafioFinalCodingTank
             case 1:
                 Question1();
                 break;
+            case 2:
+                Question2();
+                break;
             default:
                 break;
         }
@@ -46,7 +49,6 @@ public class DesafioFinalCodingTank
         {
             Console.Write("Insira um valor: ");
             if(int.TryParse(Console.ReadLine(), out int input)){
-                //TODO refactor
                 if (input % 2 == 0)
                 {
                     evenTotal++;
@@ -68,7 +70,7 @@ public class DesafioFinalCodingTank
                 }
             } else
             {
-                Console.WriteLine("\nERROR: Insira um número!");
+                Console.WriteLine("\nERROR: Insira um número válido!");
                 i--;
             }
             
@@ -79,7 +81,42 @@ public class DesafioFinalCodingTank
                           $"Número de valores negativos: {negativeTotal}\n" +
                           $"Número de valores positivos: {positiveTotal}");
     }
-    static void Question2(){}
+
+    static void Question2()
+    {
+        Console.Write($"Insira o 1° valor: ");
+        int.TryParse(Console.ReadLine(), out int n1);
+        
+        Console.Write($"Insira o 2° valor: ");
+        int.TryParse(Console.ReadLine(), out int n2);
+        
+        Console.WriteLine($"{n1} vezes {n2} é igual a {Multiply(n1, n2)}");
+        Console.WriteLine($"{n1} dividido por {n2} é igual a {Divide(n1, n2)}");
+        
+        static int Multiply(int n1, int n2)
+        {
+            int mul = 0;
+            for (int i = 1; i <= n2; i++)
+            {
+                mul += n1;
+            }
+
+            return mul;
+        }
+
+        static int Divide(int n1, int n2)
+        {
+            int div = n1;
+            int i = 0;
+            while (div - n2 > 0)
+            {
+                div -= n2;
+                i++;
+            }
+
+            return i;
+        }
+    }
     static void Question3(){}
     static void Question4(){}
     static void Question5(){}
