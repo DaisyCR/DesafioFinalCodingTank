@@ -36,6 +36,9 @@ public class DesafioFinalCodingTank
             case 3:
                 Question3();
                 break;
+            case 4:
+                Question4();
+                break;
             default:
                 break;
         }
@@ -158,7 +161,17 @@ public class DesafioFinalCodingTank
                           $"Palavras que iniciam com letra maiúsculas: {firstLetterUpperWords}\n" +
                           $"Palavras que iniciam com letra minúsculas: {firstLetterLowerWords}\n");
     }
-    static void Question4(){}
+
+    static void Question4()
+    {
+        Console.WriteLine("Alternativa C)1\n" +
+                          "Durante a conversão de um numero inteiro de 32 bits para um inteiro " +
+                          "de 16 bits foi passada para a função Convert.ToInt16() uma condicional" +
+                          "falsa que foi invertida para positivo pelo operador lógico !.\n" +
+                          "Quando um valor booleano precisa ser representando em valores " +
+                          "inteiros, o numero escolhido para valores positivos é o 1");
+       
+    }
     static void Question5(){}
     
 }
