@@ -33,6 +33,9 @@ public class DesafioFinalCodingTank
             case 2:
                 Question2();
                 break;
+            case 3:
+                Question3();
+                break;
             default:
                 break;
         }
@@ -117,7 +120,44 @@ public class DesafioFinalCodingTank
             return i;
         }
     }
-    static void Question3(){}
+
+    static void Question3()
+    {
+        int uppercaseWords = 0;
+        int lowercaseWords = 0;
+        int firstLetterUpperWords = 0;
+        int firstLetterLowerWords = 0;
+        
+        Console.Write("Escreva uma frase: ");
+        string[] sentence = Console.ReadLine().Split(" ");
+        foreach (string word in sentence)
+        {
+            string firstLetter = word.Substring(0, 1);
+            if (word == word.ToUpper())
+            {
+                uppercaseWords++;
+            }
+            
+            if (word == word.ToLower())
+            {
+                lowercaseWords++;
+            }
+            
+            if (firstLetter == firstLetter.ToUpper())
+            {
+                firstLetterUpperWords++;
+            }
+            
+            if (firstLetter == firstLetter.ToLower())
+            {
+                firstLetterLowerWords++;
+            }
+        }
+        Console.WriteLine($"Palavras maiúsculas: {uppercaseWords}\n" +
+                          $"Palavras minúsculas: {lowercaseWords}\n" +
+                          $"Palavras que iniciam com letra maiúsculas: {firstLetterUpperWords}\n" +
+                          $"Palavras que iniciam com letra minúsculas: {firstLetterLowerWords}\n");
+    }
     static void Question4(){}
     static void Question5(){}
     
