@@ -20,11 +20,6 @@ public class DesafioFinalCodingTank
 
         Console.Write("Escolha uma questão: ");
         int.TryParse(Console.ReadLine(), out int input);
-        if (input < 1 || input > questions.Count)
-        {
-            Console.WriteLine($"ERROR: Insira um numero entre 1 e {questions.Count}");
-            Main();
-        }
         switch (input)
         {
             case 1:
@@ -41,6 +36,10 @@ public class DesafioFinalCodingTank
                 break;
             case 5:
                 Question5();
+                break;
+            default:
+                Console.WriteLine($"\nERROR: Insira um numero entre 1 e {questions.Count}");
+                Main();
                 break;
         }
     }
@@ -123,11 +122,15 @@ public class DesafioFinalCodingTank
         static int Divide(int n1, int n2)
         {
             int div = n1;
-            int i = 1;
-            while (div - n2 > 0)
+            int i = 0;
+            while (div > 0)
             {
                 div -= n2;
                 i++;
+                if (div < 0)
+                {
+                    i--;
+                }
             }
 
             return i;
@@ -142,7 +145,7 @@ public class DesafioFinalCodingTank
         int firstLetterLowerWords = 0;
 
         Console.Write("Escreva uma frase: ");
-        var input = Console.ReadLine() == null ? "" : Console.ReadLine();
+        var input = Console.ReadLine();
         if (input == null)
         {
             input = "";
@@ -150,12 +153,13 @@ public class DesafioFinalCodingTank
         string[] sentence = input.Split(" ");
         foreach (string word in sentence)
         {
+            string firstLetter = word.Substring(0, 1);
+            
             if (IsANumber(word))
             {
                 continue;
             }
             
-            string firstLetter = word.Substring(0, 1);
             if (word == word.ToUpper())
             {
                 uppercaseWords++;
