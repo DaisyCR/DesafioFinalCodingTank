@@ -11,7 +11,7 @@ public class DesafioFinalCodingTank
             "Questão 2",
             "Questão 3",
             "Questão 4",
-            "Questão 5",
+            "Questão 5"
         };
         foreach (var question in questions.Select((name, index) => (name, index)))
         {
@@ -41,8 +41,6 @@ public class DesafioFinalCodingTank
                 break;
             case 5:
                 Question5();
-                break;
-            default:
                 break;
         }
     }
@@ -93,14 +91,23 @@ public class DesafioFinalCodingTank
 
     static void Question2()
     {
-        Console.Write($"Insira o 1° valor: ");
-        int.TryParse(Console.ReadLine(), out int n1);
-        
-        Console.Write($"Insira o 2° valor: ");
-        int.TryParse(Console.ReadLine(), out int n2);
+        int n1 = Input(1);
+        int n2 = Input(2);
         
         Console.WriteLine($"{n1} vezes {n2} é igual a {Multiply(n1, n2)}");
         Console.WriteLine($"{n1} dividido por {n2} é igual a {Divide(n1, n2)}");
+        
+        static int Input(int n)
+        {
+            Console.Write($"Insira o {n}° valor: ");
+            if (int.TryParse(Console.ReadLine(), out int value))
+            {
+                return value;
+            }
+            
+            Console.WriteLine("\nERROR: Insira um número válido!");
+            return Input(n);
+        }
         
         static int Multiply(int n1, int n2)
         {
@@ -116,7 +123,7 @@ public class DesafioFinalCodingTank
         static int Divide(int n1, int n2)
         {
             int div = n1;
-            int i = 0;
+            int i = 1;
             while (div - n2 > 0)
             {
                 div -= n2;
@@ -199,7 +206,7 @@ public class DesafioFinalCodingTank
                           " A condição para que o loop continue é de que o valor de i permaneça" +
                           " menor ou igual a 7, e após cada repetição o valor de i incrementará em 3." +
                           " O resultado do programa apresenta os valores de i durante o loop no" +
-                          " terminal, com cada valor sendo escrito em linhas diferentes");
+                          " terminal, com cada valor sendo escrito em linhas diferentes.");
         
     }
     
