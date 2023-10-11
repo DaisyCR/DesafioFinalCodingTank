@@ -184,11 +184,11 @@ public class DesafioFinalCodingTank
     static void Question4()
     {
         Console.WriteLine("Alternativa C)1");
-        Console.WriteLine("Durante a conversão de um numero inteiro de 32 bits para um inteiro " +
-                          "de 16 bits foi passada para a função Convert.ToInt16() uma condicional" +
-                          "falsa que foi invertida para positivo pelo operador lógico !.\n" +
-                          "Quando um valor booleano precisa ser representando em valores " +
-                          "inteiros, o numero escolhido para valores positivos é o 1");
+        Console.WriteLine("Durante a conversão de um numero inteiro de 32 bits para um inteiro" +
+                          " de 16 bits foi passada para a função Convert.ToInt16() uma condicional" +
+                          " falsa que foi invertida para positivo pelo operador lógico !.\n" +
+                          "Quando um valor booleano precisa ser representando em valores" +
+                          " inteiros, o numero escolhido para valores positivos é o 1.");
        
     }
 
