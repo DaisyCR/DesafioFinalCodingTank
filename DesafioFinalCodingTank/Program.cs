@@ -133,11 +133,21 @@ public class DesafioFinalCodingTank
         int lowercaseWords = 0;
         int firstLetterUpperWords = 0;
         int firstLetterLowerWords = 0;
-        
+
         Console.Write("Escreva uma frase: ");
-        string[] sentence = Console.ReadLine().Split(" ");
+        var input = Console.ReadLine() == null ? "" : Console.ReadLine();
+        if (input == null)
+        {
+            input = "";
+        }
+        string[] sentence = input.Split(" ");
         foreach (string word in sentence)
         {
+            if (IsANumber(word))
+            {
+                continue;
+            }
+            
             string firstLetter = word.Substring(0, 1);
             if (word == word.ToUpper())
             {
@@ -159,10 +169,16 @@ public class DesafioFinalCodingTank
                 firstLetterLowerWords++;
             }
         }
+        
         Console.WriteLine($"Palavras maiúsculas: {uppercaseWords}\n" +
                           $"Palavras minúsculas: {lowercaseWords}\n" +
                           $"Palavras que iniciam com letra maiúsculas: {firstLetterUpperWords}\n" +
                           $"Palavras que iniciam com letra minúsculas: {firstLetterLowerWords}\n");
+        
+        static bool IsANumber(string word)
+        {
+            return long.TryParse(word, out _) || double.TryParse(word, out _);
+        }
     }
 
     static void Question4()
